@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: rgba(255, 255, 255, 0.4); */
+  line-height: 1.5;
+  margin: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  object-fit: fill;
+  display: block;
+  width: 100%;
+  height: 200px;
+  /* border-radius: 5px 5px 0 0; */
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background-image: linear-gradient(90deg, rgb(156, 144, 148) 0%, rgb(49, 45, 60) 100%);
+  opacity: 1;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 40px;
+}
+
+.on-scroll {
+  opacity: 0.9;
+}
+
+.wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-field {
+  position: relative;
+}
+
+input {
+  font-family: 'Tilt Neon', cursive;
+  height: 40px;
+  width: 300px;
+  padding: 5px;
+  color: #2a2438;
+  /* color: #393e46; */
+  border-radius: 5px 0 0 5px;
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  transition: border-color 300ms ease-in-out;
+  outline: none;
+}
+
+.btn-search {
+  height: 40px;
+  width: 60px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  color: #ffffff;
+  border: 2px solid #9896f1;
+  background-color: #9896f1;
+  transition: background-color 300ms ease-in-out;
+}
+
+.btn-search:hover,
+.btn-search:focus
+.load-more:focus,
+.load-more:hover {
+  background-color: rgba(152, 150, 241, 0.5);
+}
+
+.btn-clear {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.form-icon {
+  fill: #ff0000;
+}
+
+.load-more {
+  display: block;
+  margin: 0 auto;
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ffffff;
+  border: 2px solid #9896f1;
+  background-color: #9896f1;
+  transition: background-color 300ms ease-in-out;
+}
